@@ -20,14 +20,17 @@ struct Book {
 
 // 0.1 顺序表
 typedef struct {
-  Book *elem;
+  Book* elem;
   int length;
 } SqList;
 
 // 0.2 链式表
 typedef struct LNode {
   Book data;
-  struct LNode *next;
+  struct LNode* next;
 } LNode, *LinkList;
 
-int main(void) { exit(0); }
+int main(void) {
+  std::printf("hello \n");
+  exit(0);
+}
