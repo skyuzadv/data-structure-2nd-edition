@@ -14,7 +14,7 @@
 
 using namespace std;
 
-#define SIZE     1000
+#define SIZE 1000
 #define FILENAME "polynomial array.ans"
 
 int arr_1[SIZE];        // 数组1
@@ -68,7 +68,7 @@ void showArray_H(int c[], int range) {
 
 // 降序显示
 void showArray_L(int c[], int range) {
-  FILE* fp;
+  FILE *fp;
   fp = fopen("polynomial array.ans", "w");
   if (!fp) {
     printf("Can't open file! \n");
@@ -94,8 +94,8 @@ void showArray_L(int c[], int range) {
 
 // 判定文本文件是否为空
 // 文件空，返回值为1
-int isfileNull(const char* fileName) {
-  FILE* fp = fopen(fileName, "r");
+int isfileNull(const char *fileName) {
+  FILE *fp = fopen(fileName, "r");
   if (!fp) {
     printf("Can't open file! \n");
     return 1;
@@ -108,10 +108,10 @@ int isfileNull(const char* fileName) {
     return 0;
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
   resetArray();
   int n1, n2, coef, expn; // coef系数 expn指数
-  FILE* fp;
+  FILE *fp;
   if (isfileNull("polynomial array.in")) {
     printf("file is null! please input some data, end with '$' \n");
     fp = fopen("polynomial array.in", "w"); // write data
