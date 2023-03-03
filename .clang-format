@@ -1,6 +1,6 @@
-BasedOnStyle: GUN
+BasedOnStyle: Google
 UseTab: Never
-IndentWidth: 2
+IndentWidth: 4
 DerivePointerAlignment: false
 PointerAlignment: true
 AlwaysBreakAfterReturnType: None
