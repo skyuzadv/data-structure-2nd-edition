@@ -8,9 +8,15 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/<executable file>",
+            "preLaunchTask": {
+                "command": "cleanRebuild",
+                "type": "cmake"
+            },
+            "program": "${workspaceFolder}/build/tests/ch02/test.exe",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}/build",
+            "internalConsoleOptions": "neverOpen",
+            "console": "integratedTerminal",
         }
     ]
 }

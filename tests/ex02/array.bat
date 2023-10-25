@@ -1,0 +1,1 @@
+g++ polynomial-array.cpp -std=c++17 -o array.exe
